@@ -21,6 +21,7 @@ along with FFB Arcade Plugin GUI.If not, see < https://www.gnu.org/licenses/>.
 #include "ButtonRumble.h"
 #include "ButtonRumbleInput.h"
 #include "CrazyTaxi.h"
+#include "CruisinBlast.h"
 #include "ChaseHQ2.h"
 #include "ChaseHQ2Input.h"
 #include "D1GPArcade.h"
@@ -633,6 +634,12 @@ namespace FFBPluginGUI {
 			MKGP118Custom^ obj1 = gcnew MKGP118Custom(this);
 			obj1->ShowDialog();
 		}
+		else if (GameSelect == 75)
+		{
+			this->Hide();
+			CruisinBlast^ obj1 = gcnew CruisinBlast(this);
+			obj1->ShowDialog();
+			}
 		else
 		{
 			MessageBox::Show("FFBPlugin.ini does not contain GameId or does not exist");
@@ -651,7 +658,8 @@ namespace FFBPluginGUI {
 			GameSelect == 17 || GameSelect == 18 || GameSelect == 19 || GameSelect == 20 || GameSelect == 21 || GameSelect == 22 || GameSelect == 23 || GameSelect == 24 || GameSelect == 27 || GameSelect == 30 || GameSelect == 31  || GameSelect == 33 || 
 			GameSelect == 34 || GameSelect == 36 || GameSelect == 37 || GameSelect == 38 || GameSelect == 39 || GameSelect == 40 || GameSelect == 41 || GameSelect == 42 || GameSelect == 43 || GameSelect == 44 || GameSelect == 45 || GameSelect == 46 || 
 			GameSelect == 47 || GameSelect == 50 || GameSelect == 51 || GameSelect == 53 || GameSelect == 54 || GameSelect == 55 || GameSelect == 56 || GameSelect == 57 || GameSelect == 58 || GameSelect == 59 || GameSelect == 60 || GameSelect == 61 || 
-			GameSelect == 62 || GameSelect == 63 || GameSelect == 64 || GameSelect == 65 || GameSelect == 66 || GameSelect == 68 || GameSelect == 69 || GameSelect == 70 || GameSelect == 71 || GameSelect == 72 || GameSelect == 73 || GameSelect == 74)
+			GameSelect == 62 || GameSelect == 63 || GameSelect == 64 || GameSelect == 65 || GameSelect == 66 || GameSelect == 68 || GameSelect == 69 || GameSelect == 70 || GameSelect == 71 || GameSelect == 72 || GameSelect == 73 || GameSelect == 74 || 
+			GameSelect == 75)
 		{
 			this->Hide();
 			StrengthInput^ obj1 = gcnew StrengthInput(this);
@@ -737,7 +745,7 @@ namespace FFBPluginGUI {
 			LindberghHelp^ obj1 = gcnew LindberghHelp(this);
 			obj1->ShowDialog();
 		}
-		else if (GameSelect == 61 || GameSelect == 62 || GameSelect == 63 || GameSelect == 66)
+		else if (GameSelect == 61 || GameSelect == 62 || GameSelect == 63 || GameSelect == 66 || GameSelect == 75)
 		{
 			this->Hide();
 			ElfLdr2Help^ obj1 = gcnew ElfLdr2Help(this);

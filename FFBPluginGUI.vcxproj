@@ -162,6 +162,7 @@
     <ClCompile Include="ATVTrack.cpp" />
     <ClCompile Include="Batman.cpp" />
     <ClCompile Include="CrazyTaxi.cpp" />
+    <ClCompile Include="CruisinBlast.cpp" />
     <ClCompile Include="D1GPArcade.cpp" />
     <ClCompile Include="DaytonaChampionshipUSANSE.cpp" />
     <ClCompile Include="DaytonaUSA.cpp" />
@@ -318,6 +319,7 @@
     <ClInclude Include="ATVTrack.h" />
     <ClInclude Include="Batman.h" />
     <ClInclude Include="CrazyTaxi.h" />
+    <ClInclude Include="CruisinBlast.h" />
     <ClInclude Include="D1GPArcade.h" />
     <ClInclude Include="DaytonaChampionshipUSANSE.h" />
     <ClInclude Include="DaytonaUSA.h" />
